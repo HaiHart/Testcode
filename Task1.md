@@ -62,5 +62,5 @@ Showcase in table`:`
 |---|---|
 |Post condition | Clerk receive customer order
 |Trigger | Customer wants to order some food|
-|Main scenario| Customer choose from web menu  then check for quantity in cart  The order is finished proceed to payment  Create order in txt file after payment
+|Main scenario| Customer choose from web menu\ then check for quantity in cart\  The order is finished proceed to payment\  Create order in txt file after payment
 |Extension| If during payment customer decide co cancel go back to menu page
