@@ -50,11 +50,11 @@ The non-functional requirement of the project should be as follow `:`
 
 Demo use-case diagram`:`
 
-![alt text](./use-case diagram.drawio.svg)
+![alt text](./Picture/Totalusecase.png)
 
 Demo use-case diagram for food ordering`:`
 
-![alt text](./Food ordering.drawio.svg)
+![alt text](./Picture/Usecase.png)
 
 Showcase in table`:`
 
