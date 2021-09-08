@@ -7,9 +7,11 @@ import Navbar from './components/Navbar';
 import Default from './components/Default';
 import Detail from './components/Detail';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Modal from './components/Modal';
+import Credit from './components/Credit';
 
 function App() {
+
     return (
         <React.Fragment>
             <Navbar></Navbar>
@@ -19,6 +21,8 @@ function App() {
                 <Route exact path="/Cart" component={Cart}></Route>
                 <Route component={Default}></Route>
             </Switch>
+            <Modal />
+            <Credit/>
         </React.Fragment>);
     }
 

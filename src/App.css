@@ -26,7 +26,8 @@ body{
 	color:var(--mainDark);
 	font-family: 'Permanent Marker', cursive;
 	font-style: oblique;
-	background: var(--mainWhite);
+	background: transparent;
 	text-align: center;
 	margin: auto;
+	font-weight: strong;
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Product from './Product'
 import Title from './Title'
 import { ProductConsumer } from '../context'
+import { ButtonContainer } from './Styling'
 
 export default class Store extends Component {
 	render() {
@@ -9,7 +10,7 @@ export default class Store extends Component {
 			<React.Fragment>
 				<div className="py-5">
 					<div className="container">
-						<Title name="our" title="product"/>
+						<Title name="Available" title="Order"/>
 						<div className="row">
 							<ProductConsumer>
 								{value => {
@@ -21,6 +22,17 @@ export default class Store extends Component {
 						</div>
 					</div>
 				</div>
+				<ProductConsumer>
+					{value => {
+						return (
+							<ButtonContainer
+								className="mx-auto text-capitalize"
+								onClick={() => { value.openCredit() }}>
+								credit
+							</ButtonContainer>
+					)
+					}}
+				</ProductConsumer>
 			</React.Fragment>
 			
 		)
