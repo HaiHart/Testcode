@@ -40,7 +40,7 @@ The non-functional requirement of the project should be as follow `:`
 
 * Product list and payment should be reusable
 * Product is accessible through mobile or pc web browser
-* The product should ve able to record at least 300 order in a `.`txt file, with the following format`:` Table, order `:` quantity  
+* The product should ve able to record at least 300 order in a `.txt`(or `.JSON`) file, with the following format`:` Table, order `:` quantity  
 * The render time should not take any longer than **10** second  
 * Should not require login from customer
 * Final payment should add tax
