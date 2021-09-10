@@ -19,6 +19,7 @@ The product should provide the following service`:`
 * Record of order form customer
 * list of customers' order of **1** day
 * Total sell of **1** day  
+* Online payment
 
 The scope should first be limited to **1** restaurant as a pilot, with the intention to expand to a **chain** of restaurant.
 
