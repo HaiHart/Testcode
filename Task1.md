@@ -21,6 +21,7 @@ The product should provide the following service`:`
 * Total sell of **1** day  
 * Online payment
 * Timer for pick up
+* Display
 
 The scope should first be limited to **1** restaurant as a pilot, with the intention to expand to a **chain** of restaurant.
 
