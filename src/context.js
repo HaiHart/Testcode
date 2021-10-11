@@ -8,7 +8,7 @@ const ProductContext = React.createContext();
 //consumer
 class ProductProvider extends Component {
 	state =
-		JSON.parse(localStorage.getItem('state')) ||
+		//JSON.parse(localStorage.getItem('state')) ||
 	{
 		products: [],
 		detailProduct: detailProduct,
@@ -16,7 +16,7 @@ class ProductProvider extends Component {
 		modalOpen: false,
 		modalProduct: detailProduct,
 		textt: [],
-		showcase:false
+		showcase: false,
 		}
 	getUpdate = async () => {
 		let tempCart = [];
@@ -35,14 +35,16 @@ class ProductProvider extends Component {
 		console.log(this.state);
 	}
 	componentDidMount() {
-		if (localStorage.getItem('state') !== 0) {
+		/*(if (localStorage.getItem('state') !== 0) {
 			this.getUpdate();
-		} else {	
+		} else */
+		{
 			this.setProduct();
 		}
 		axios.get('/api/news')
 			.then(res => {
 				const news = res.data;
+				console.log(news);
 				var result = Object.keys(news).map((e)=>{return news[e]})
 				this.setState(() => { return { textt: result[0]} });
 			}).catch(error => console.log(error))
@@ -80,7 +82,7 @@ class ProductProvider extends Component {
 		product.total = price;
 		this.setState(() => {
 			return { products: tempProducts, cart: [...this.state.cart, product]}
-		}, () => { console.log(this.state.message) })
+		})
 		localStorage.setItem('state', JSON.stringify(this.state));
 	}
 	openModal = id => {
@@ -110,7 +112,7 @@ class ProductProvider extends Component {
 				closeModal: this.closeModal,
 				getList: this.getList,
 				openCredit: this.openCredit,
-				closeCredit:this.closeCredit
+				closeCredit: this.closeCredit,
 			}}> 
 				{this.props.children }
 			</ProductContext.Provider>

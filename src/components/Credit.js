@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context'
 import { ButtonContainer, ModalContainer } from './Styling'
 import List from './List';
@@ -25,11 +24,11 @@ export default class Credit extends Component {
 													}}
 												</ProductConsumer>
 												
-												<Link to="/">
+												
 													<ButtonContainer onClick={() => closeCredit()}>
 														return
 													</ButtonContainer>
-												</Link>
+											
 											</div>
 										</div>
 									</div>

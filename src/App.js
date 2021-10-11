@@ -22,7 +22,8 @@ function App() {
                 <Route component={Default}></Route>
             </Switch>
             <Modal />
-            <Credit/>
+            <Credit />
+
         </React.Fragment>);
     }
 
